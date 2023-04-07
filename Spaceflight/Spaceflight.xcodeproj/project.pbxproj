@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE73704B29BA562D00441216 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73704A29BA562D00441216 /* Article.swift */; };
+		AE73704D29BA581900441216 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73704C29BA581900441216 /* APIManager.swift */; };
+		AE73704F29BA5CE600441216 /* SpaceflightNewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73704E29BA5CE600441216 /* SpaceflightNewsService.swift */; };
+		AE73705329BA6D0200441216 /* NewsDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE73705229BA6D0200441216 /* NewsDetails.storyboard */; };
+		AE73705529BA6D0C00441216 /* NewsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73705429BA6D0C00441216 /* NewsDetailsViewController.swift */; };
+		AE73705729BA6D1400441216 /* NewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73705629BA6D1400441216 /* NewsListViewController.swift */; };
+		AE73705929BA707C00441216 /* NewsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73705829BA707C00441216 /* NewsListCell.swift */; };
+		AE9E90C729BA129D0076533F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9E90C629BA129D0076533F /* AppDelegate.swift */; };
+		AE9E90C929BA129D0076533F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9E90C829BA129D0076533F /* SceneDelegate.swift */; };
+		AE9E90CE29BA129D0076533F /* NewsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE9E90CC29BA129D0076533F /* NewsList.storyboard */; };
+		AE9E90D029BA12A00076533F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9E90CF29BA12A00076533F /* Assets.xcassets */; };
+		AE9E90D329BA12A00076533F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE9E90D129BA12A00076533F /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AE73704A29BA562D00441216 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		AE73704C29BA581900441216 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		AE73704E29BA5CE600441216 /* SpaceflightNewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceflightNewsService.swift; sourceTree = "<group>"; };
+		AE73705229BA6D0200441216 /* NewsDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewsDetails.storyboard; sourceTree = "<group>"; };
+		AE73705429BA6D0C00441216 /* NewsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewController.swift; sourceTree = "<group>"; };
+		AE73705629BA6D1400441216 /* NewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewController.swift; sourceTree = "<group>"; };
+		AE73705829BA707C00441216 /* NewsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListCell.swift; sourceTree = "<group>"; };
+		AE9E90C329BA129D0076533F /* Spaceflight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spaceflight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE9E90C629BA129D0076533F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE9E90C829BA129D0076533F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AE9E90CD29BA129D0076533F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/NewsList.storyboard; sourceTree = "<group>"; };
+		AE9E90CF29BA12A00076533F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE9E90D229BA12A00076533F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE9E90D429BA12A00076533F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE9E90C029BA129D0076533F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE73704729BA55B200441216 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE73704A29BA562D00441216 /* Article.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE73704829BA55BE00441216 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				AE73705129BA6CF800441216 /* NewsDetails */,
+				AE73705029BA6CF000441216 /* NewsList */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		AE73704929BA55FB00441216 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				AE73704C29BA581900441216 /* APIManager.swift */,
+				AE73704E29BA5CE600441216 /* SpaceflightNewsService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		AE73705029BA6CF000441216 /* NewsList */ = {
+			isa = PBXGroup;
+			children = (
+				AE9E90CC29BA129D0076533F /* NewsList.storyboard */,
+				AE73705629BA6D1400441216 /* NewsListViewController.swift */,
+				AE73705829BA707C00441216 /* NewsListCell.swift */,
+			);
+			path = NewsList;
+			sourceTree = "<group>";
+		};
+		AE73705129BA6CF800441216 /* NewsDetails */ = {
+			isa = PBXGroup;
+			children = (
+				AE73705229BA6D0200441216 /* NewsDetails.storyboard */,
+				AE73705429BA6D0C00441216 /* NewsDetailsViewController.swift */,
+			);
+			path = NewsDetails;
+			sourceTree = "<group>";
+		};
+		AE9E90BA29BA129D0076533F = {
+			isa = PBXGroup;
+			children = (
+				AE9E90C529BA129D0076533F /* Spaceflight */,
+				AE9E90C429BA129D0076533F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE9E90C429BA129D0076533F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE9E90C329BA129D0076533F /* Spaceflight.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE9E90C529BA129D0076533F /* Spaceflight */ = {
+			isa = PBXGroup;
+			children = (
+				AE73704929BA55FB00441216 /* API */,
+				AE73704829BA55BE00441216 /* Screens */,
+				AE73704729BA55B200441216 /* Models */,
+				AE9E90C629BA129D0076533F /* AppDelegate.swift */,
+				AE9E90C829BA129D0076533F /* SceneDelegate.swift */,
+				AE9E90CF29BA12A00076533F /* Assets.xcassets */,
+				AE9E90D129BA12A00076533F /* LaunchScreen.storyboard */,
+				AE9E90D429BA12A00076533F /* Info.plist */,
+			);
+			path = Spaceflight;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE9E90C229BA129D0076533F /* Spaceflight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE9E90D729BA12A00076533F /* Build configuration list for PBXNativeTarget "Spaceflight" */;
+			buildPhases = (
+				AE9E90BF29BA129D0076533F /* Sources */,
+				AE9E90C029BA129D0076533F /* Frameworks */,
+				AE9E90C129BA129D0076533F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spaceflight;
+			productName = Spaceflight;
+			productReference = AE9E90C329BA129D0076533F /* Spaceflight.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE9E90BB29BA129D0076533F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					AE9E90C229BA129D0076533F = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = AE9E90BE29BA129D0076533F /* Build configuration list for PBXProject "Spaceflight" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE9E90BA29BA129D0076533F;
+			productRefGroup = AE9E90C429BA129D0076533F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE9E90C229BA129D0076533F /* Spaceflight */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE9E90C129BA129D0076533F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE73705329BA6D0200441216 /* NewsDetails.storyboard in Resources */,
+				AE9E90D329BA12A00076533F /* LaunchScreen.storyboard in Resources */,
+				AE9E90D029BA12A00076533F /* Assets.xcassets in Resources */,
+				AE9E90CE29BA129D0076533F /* NewsList.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE9E90BF29BA129D0076533F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE73705529BA6D0C00441216 /* NewsDetailsViewController.swift in Sources */,
+				AE73704B29BA562D00441216 /* Article.swift in Sources */,
+				AE73704F29BA5CE600441216 /* SpaceflightNewsService.swift in Sources */,
+				AE73705729BA6D1400441216 /* NewsListViewController.swift in Sources */,
+				AE73704D29BA581900441216 /* APIManager.swift in Sources */,
+				AE9E90C729BA129D0076533F /* AppDelegate.swift in Sources */,
+				AE73705929BA707C00441216 /* NewsListCell.swift in Sources */,
+				AE9E90C929BA129D0076533F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AE9E90CC29BA129D0076533F /* NewsList.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE9E90CD29BA129D0076533F /* Base */,
+			);
+			name = NewsList.storyboard;
+			sourceTree = "<group>";
+		};
+		AE9E90D129BA12A00076533F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE9E90D229BA12A00076533F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE9E90D529BA12A00076533F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE9E90D629BA12A00076533F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE9E90D829BA12A00076533F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H87DT32ZGT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Spaceflight/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = NewsList;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vessy.Spaceflight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE9E90D929BA12A00076533F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H87DT32ZGT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Spaceflight/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = NewsList;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vessy.Spaceflight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE9E90BE29BA129D0076533F /* Build configuration list for PBXProject "Spaceflight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE9E90D529BA12A00076533F /* Debug */,
+				AE9E90D629BA12A00076533F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE9E90D729BA12A00076533F /* Build configuration list for PBXNativeTarget "Spaceflight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE9E90D829BA12A00076533F /* Debug */,
+				AE9E90D929BA12A00076533F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE9E90BB29BA129D0076533F /* Project object */;
+}
